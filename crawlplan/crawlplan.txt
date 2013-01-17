@@ -1,0 +1,25 @@
+Generated on November 9, 2012 at 10:35 am
+Crawl Plan Name  AutosAOL
+Domain  autos.aol.com
+Note
+CPG NOTES
+1. Create a single job for each zip code (I've supplied a zip code file in the past)
+2. Each crawl should be 250,000 URLs in size
+CRAWL PLAN
+1. Start crawl from a seed list like
+http://autos.aol.com/used-list/location-77098/vcond-Used/cpo-true/range-25/  where only the
+"77098" changes for each zip code
+2. From seed list, crawl to all result pages (e.g.,
+http://autos.aol.com/used-list/location-77098/vcond-Used/cpo-true/range-25/page-4/)
+3. From each result page, crawl to all listing pages (e.g.,
+http://autos.aol.com/used-detail-2018366408480984663-Lexus-RX-2012/)
+XML Schema
+<document date_crawled="" meta_description="" title="" v="">
+<documenturl><![CDATA[]]></documenturl>
+<product engine="" make="" mileage="" model="" name="" price="" transmission="" trim="" VIN=""
+year_built="">
+<features>
+<feature val="" />
+</features><merchant address="" name="" phone="" postal_code="" region="" />
+</product>
+</document>
